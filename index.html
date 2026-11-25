@@ -1,11 +1,769 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fdf9f2" />
+    <meta
+      name="description"
+      content="A welcoming mental-health space for Kenyan secondary school students to learn, listen, and find support."
+    />
+    <title>MindSpace Kenya — Your mind matters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="toast"
+      id="language-toast"
+      role="status"
+      aria-live="polite"
+    ></div>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="#top" aria-label="MindSpace Kenya home">
+          <span class="brand-mark" aria-hidden="true"
+            ><svg viewBox="0 0 24 24">
+              <path
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"
+              /></svg
+          ></span>
+          <span>MindSpace Kenya</span>
+        </a>
+        <button
+          class="menu-toggle icon-button"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#understand" data-en="Understand" data-sheng="Kuelewa"
+            >Understand</a
+          >
+          <a href="#problem" data-en="Stigma" data-sheng="Stigma">Stigma</a>
+          <a href="#why-quiet" data-en="Why Stay Quiet" data-sheng="Kukaa kimya"
+            >Why Stay Quiet</a
+          >
+          <a
+            href="#voice-notes"
+            class="active"
+            data-en="Voice Notes"
+            data-sheng="Skiza sauti"
+            >Voice Notes</a
+          >
+          <a
+            href="#practical-support"
+            data-en="How to help"
+            data-sheng="Kusaidiana"
+            >How to help</a
+          >
+          <a
+            href="#knowledge-check"
+            data-en="Myth or Fact"
+            data-sheng="Ukweli au porojo"
+            >Myth or Fact</a
+          >
+          <a href="#resources" data-en="Resources" data-sheng="Msaada"
+            >Resources</a
+          >
+        </nav>
+        <div class="header-actions">
+          <div
+            class="language-switch"
+            role="group"
+            aria-label="Choose language"
+          >
+            <button
+              id="lang-en"
+              type="button"
+              class="selected"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button id="lang-sheng" type="button" aria-pressed="false">
+              Sheng<span class="live-dot" aria-hidden="true"></span>
+            </button>
+          </div>
+          <button id="quick-exit" type="button" class="quick-exit">
+            <span class="eye-icon" aria-hidden="true">◉</span
+            ><span>Quick Exit</span>
+          </button>
+          <a class="helpline-pill" href="#helpline"
+            ><span class="live-dot" aria-hidden="true"></span
+            ><span>Helpline 116</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-grid wrap">
+          <div class="hero-copy">
+            <span class="eyebrow-chip"
+              ><span aria-hidden="true">✳</span
+              ><span
+                data-en="A STUDENT AWARENESS PROJECT"
+                data-sheng="PROJECT YA AWARENESS YA WANAFUNZI"
+                >A STUDENT AWARENESS PROJECT</span
+              ></span
+            >
+            <h1>
+              <span
+                data-en="Your mind matters."
+                data-sheng="Aki, akili yako ni muhimu."
+                >Your mind matters.</span
+              ><br /><span
+                class="text-teal"
+                data-en="Your voice does too."
+                data-sheng="Na sauti yako inasikika."
+                >Your voice does too.</span
+              >
+            </h1>
+            <p
+              class="hero-description"
+              data-en="Mental health is part of being healthy. This space helps Kenyan secondary school students understand their feelings, challenge stigma and discover safe ways to ask for support."
+              data-sheng="Afya ya akili ni muhimu. Hapa ni safe space ya kuelewa feelings zako, kuchallenge stigma na kupata njia salama za kuomba support."
+            >
+              Mental health is part of being healthy. This space helps Kenyan
+              secondary school students understand their feelings, challenge
+              stigma and discover safe ways to ask for support.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#voice-notes"
+                ><span
+                  data-en="Listen to Student Voices"
+                  data-sheng="Skiza sauti za wanafunzi"
+                  >Listen to Student Voices</span
+                ><span aria-hidden="true">↗</span></a
+              >
+              <a
+                class="button button-outline"
+                href="#helpline"
+                data-en="Find support"
+                data-sheng="Pata usaidizi"
+                >Find support</a
+              >
+            </div>
+          </div>
+          <div class="breathing-scene" aria-label="Guided breathing exercise">
+            <div class="breath-orbit orbit-one"></div>
+            <div class="breath-orbit orbit-two"></div>
+            <div class="breath-orbit orbit-three"></div>
+            <div class="breath-note note-top">
+              <strong data-en="You are not alone" data-sheng="Hauko solo"
+                >You are not alone</strong
+              ><span
+                data-en="Talking is a brave first step"
+                data-sheng="Kubonga ni ujasiri"
+                >Talking is a brave first step</span
+              >
+            </div>
+            <button
+              class="breath-button"
+              id="breathe-button"
+              type="button"
+              aria-label="Start a breathing exercise"
+              aria-pressed="false"
+            >
+              <span class="breath-button-inner"
+                ><strong data-en="Breathe" data-sheng="Pumua">Breathe</strong
+                ><small
+                  id="breath-status"
+                  aria-live="polite"
+                  data-en="Tap to begin"
+                  data-sheng="Gusa uanze"
+                  >Tap to begin</small
+                ></span
+              >
+            </button>
+            <div class="breath-note note-bottom">
+              <strong
+                data-en="Small steps count"
+                data-sheng="Hatua ndogo ni muhimu"
+                >Small steps count</strong
+              ><span
+                data-en="One day at a time"
+                data-sheng="Polepole, siku kwa siku"
+                >One day at a time</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="voice-section section-pad" id="voice-notes">
+        <div class="section-heading wrap heading-row">
+          <div class="heading-copy">
+            <span
+              class="section-kicker"
+              data-en="REAL STUDENT EXPERIENCES · AUDIO"
+              data-sheng="RISTO ZA WANAFUNZI · SAUTI"
+              >REAL STUDENT EXPERIENCES · AUDIO</span
+            >
+            <h2
+              data-en="Real Stories, Real Voices"
+              data-sheng="Risto za ukweli, sauti za ukweli"
+            >
+              Real Stories, Real Voices
+            </h2>
+            <p
+              data-en="Listen to student stories about exam anxiety, boarding-school loneliness, and finding the courage to speak up."
+              data-sheng="Sikiliza risto za wanafunzi kuhusu exam stress, upweke boarding na kupata ujasiri wa kuongea."
+            >
+              Listen to student stories about exam anxiety, boarding-school
+              loneliness, and finding the courage to speak up.
+            </p>
+          </div>
+          <button
+            class="button button-outline story-button"
+            id="open-story"
+            type="button"
+          >
+            <span class="record-dot" aria-hidden="true"></span
+            ><span
+              data-en="Share a thought anonymously"
+              data-sheng="Share risto bila jina"
+              >Share a thought anonymously</span
+            >
+          </button>
+        </div>
+        <div class="voice-layout wrap">
+          <section class="player-card card" aria-label="Student voice player">
+            <div class="track-heading">
+              <div class="track-avatar" aria-hidden="true">♫</div>
+              <div class="track-meta">
+                <span class="track-label" id="track-label">VOICE NOTE 01</span>
+                <h3 id="track-title">Pressure ya Form 4 Mock Exams</h3>
+                <p id="track-author">Anonymous Chali, 17 · Kiambu County</p>
+              </div>
+              <span class="play-status" id="play-status" role="status"
+                ><i></i><span>Ready to play</span></span
+              >
+            </div>
+            <div class="wave-panel">
+              <div class="wave-topline">
+                <span
+                  ><span class="sound-mark" aria-hidden="true">◖</span> Voice
+                  note player</span
+                ><span class="voice-engine" id="voice-engine"
+                  >Uses your browser&apos;s speech voice</span
+                >
+              </div>
+              <div class="waveform" id="waveform" aria-hidden="true"></div>
+            </div>
+            <div class="timeline-block">
+              <label class="sr-only" for="audio-progress"
+                >Voice note progress</label
+              ><input
+                id="audio-progress"
+                class="progress-slider"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+              />
+              <div class="time-row">
+                <span id="time-current">0:00</span
+                ><span>Tap the bar to seek</span
+                ><span id="time-total">0:16</span>
+              </div>
+            </div>
+            <div class="player-controls">
+              <div class="playback-buttons">
+                <button
+                  class="round-control"
+                  id="rewind"
+                  type="button"
+                  aria-label="Rewind 5 seconds"
+                >
+                  −5s</button
+                ><button
+                  class="play-button"
+                  id="play-toggle"
+                  type="button"
+                  aria-label="Play voice note"
+                >
+                  <span id="play-symbol" aria-hidden="true">▶</span
+                  ><span id="play-label">Play</span></button
+                ><button
+                  class="round-control"
+                  id="forward"
+                  type="button"
+                  aria-label="Forward 5 seconds"
+                >
+                  +5s
+                </button>
+              </div>
+              <div class="extra-controls">
+                <button
+                  class="round-control speed-control"
+                  id="speed-toggle"
+                  type="button"
+                  aria-label="Playback speed 1 times"
+                >
+                  1.0×</button
+                ><button
+                  class="round-control sound-control"
+                  id="mute-toggle"
+                  type="button"
+                  aria-label="Mute speech"
+                  aria-pressed="false"
+                >
+                  ◖</button
+                ><button
+                  class="transcript-toggle"
+                  id="transcript-toggle"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="transcript-panel"
+                >
+                  ▤
+                  <span data-en="Transcript" data-sheng="Maneno"
+                    >Transcript</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="transcript-panel" id="transcript-panel">
+              <div class="transcript-heading">
+                <span class="transcript-dot"></span
+                ><strong data-en="STORY TRANSCRIPT" data-sheng="MANENO YA RISTO"
+                  >STORY TRANSCRIPT</strong
+                ><span>Tap words to follow along</span>
+              </div>
+              <p
+                id="transcript-text"
+                class="transcript-text"
+                aria-live="polite"
+              ></p>
+              <p class="transcript-tip">
+                Tip: read along or tap a word to jump through the story.
+              </p>
+            </div>
+            <div class="story-quiz" id="story-quiz">
+              <div class="quiz-heading">
+                <span class="quiz-icon" aria-hidden="true">✳</span>
+                <div>
+                  <span class="quiz-kicker">A MOMENT TO REFLECT</span>
+                  <h4>Ukweli au Porojo? <span>(Truth or Rumor?)</span></h4>
+                </div>
+                <span class="quiz-count" id="quiz-count">1 of 2</span>
+              </div>
+              <div class="quiz-statement">
+                <span>STUDENT COMMUNITY STATEMENT</span>
+                <p id="quiz-statement">
+                  “A low mock exam score means your future is over.”
+                </p>
+              </div>
+              <div class="quiz-actions">
+                <button
+                  id="answer-rumor"
+                  class="answer-button rumor"
+                  type="button"
+                >
+                  That&apos;s a rumor</button
+                ><button
+                  id="answer-truth"
+                  class="answer-button truth"
+                  type="button"
+                >
+                  That&apos;s true
+                </button>
+              </div>
+              <div
+                class="quiz-feedback"
+                id="quiz-feedback"
+                role="status"
+                hidden
+              >
+                <strong id="quiz-verdict"></strong>
+                <p id="quiz-explanation"></p>
+                <button id="quiz-next" type="button">
+                  Next statement <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <aside class="playlist-column">
+            <span
+              class="playlist-label"
+              data-en="PLAYLIST · SELECT A STUDENT STORY"
+              data-sheng="PLAYLIST · CHAGUA RISTO"
+              >PLAYLIST · SELECT A STUDENT STORY</span
+            >
+            <div
+              class="playlist"
+              id="playlist"
+              role="listbox"
+              aria-label="Student stories"
+            ></div>
+            <div class="privacy-note">
+              <span aria-hidden="true">♧</span>
+              <p>
+                Stories here are sample experiences. Real students&apos;
+                identities should always be protected.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="understand-section section-pad" id="understand">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="section-kicker">01 / UNDERSTANDING MENTAL HEALTH</span>
+            <h2
+              data-en="What does mental health mean?"
+              data-sheng="Afya ya akili inamaanisha nini?"
+            >
+              What does mental health mean?
+            </h2>
+            <p>
+              Mental health is about our emotional, psychological and social
+              well-being. It affects how we think, feel, relate to others and
+              handle everyday challenges.
+            </p>
+          </div>
+          <div class="meaning-grid">
+            <article class="meaning-card card">
+              <span class="meaning-icon coral" aria-hidden="true">♡</span>
+              <h3>Emotional well-being</h3>
+              <p>
+                Recognising feelings, expressing them in healthy ways and
+                learning how to cope when life gets difficult.
+              </p>
+            </article>
+            <article class="meaning-card card">
+              <span class="meaning-icon gold" aria-hidden="true">♧</span>
+              <h3>Relationships</h3>
+              <p>
+                Feeling connected, respected and able to build supportive
+                relationships with friends, family and others.
+              </p>
+            </article>
+            <article class="meaning-card card">
+              <span class="meaning-icon sage" aria-hidden="true">☼</span>
+              <h3>Everyday coping</h3>
+              <p>
+                Managing ordinary pressures, adapting to change and knowing when
+                it is time to ask someone for help.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="stats-ribbon">
+          <div class="stats-grid wrap">
+            <article>
+              <strong>2 in 5</strong>
+              <p>
+                Adolescents in a national Kenyan survey experienced a mental
+                health problem in the previous 12 months.
+              </p>
+            </article>
+            <article>
+              <strong>11.1%</strong>
+              <p>
+                Of adolescents with a mental health problem had accessed
+                services in the previous 12 months.
+              </p>
+            </article>
+            <article>
+              <strong>47</strong>
+              <p>
+                Counties are covered by Kenya&apos;s National Child Helpline 116
+                referral network.
+              </p>
+            </article>
+            <p class="source-note">
+              Sources: Kenya National Adolescent Mental Health Survey (2022);
+              State Department for Children Services.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stigma-section section-pad" id="problem">
+        <div class="stigma-layout wrap">
+          <div>
+            <span class="section-kicker">02 / THE PROBLEM</span>
+            <h2>When stigma makes<br />silence feel safer</h2>
+            <p class="section-intro">
+              Stigma happens when people are judged, labelled or treated
+              unfairly because of mental health challenges. In a school setting,
+              it can make a student afraid to speak honestly or seek help.
+            </p>
+            <ul class="stigma-list">
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong>Name-calling and teasing:</strong> classmates may use
+                  hurtful labels instead of showing understanding.
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong>Fear of being judged:</strong> a student may worry
+                  that friends or teachers will think they are weak.
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong>Myths and misinformation:</strong> mental health
+                  challenges may be misunderstood or explained unfairly.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <blockquote class="student-quote" id="why-quiet">
+            <p>
+              “A student who is struggling does not need a label. They need to
+              be heard, respected and supported.”
+            </p>
+            <cite>MindSpace Kenya · A reminder for every school community</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="support-section section-pad" id="practical-support">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="section-kicker">04 / PRACTICAL SUPPORT</span>
+            <h2>How can we make school a safer place?</h2>
+            <p>
+              Listening without judgement and helping a friend reach a trusted
+              adult makes a real difference.
+            </p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card card">
+              <span>STEP 01</span>
+              <h3>Listen carefully</h3>
+              <p>
+                Give the person time to speak. Do not interrupt, mock or rush to
+                judge.
+              </p>
+            </article>
+            <article class="step-card card">
+              <span>STEP 02</span>
+              <h3>Take them seriously</h3>
+              <p>
+                Avoid saying “just get over it.” Their feelings deserve respect.
+              </p>
+            </article>
+            <article class="step-card card">
+              <span>STEP 03</span>
+              <h3>Encourage support</h3>
+              <p>
+                Suggest speaking with a trusted parent, teacher, or counselor.
+              </p>
+            </article>
+            <article class="step-card card">
+              <span>STEP 04</span>
+              <h3>Keep checking in</h3>
+              <p>
+                A simple “How are you doing today?” reminds someone they are
+                cared for.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="knowledge-section section-pad" id="knowledge-check">
+        <div class="knowledge-wrap">
+          <div class="section-heading">
+            <span class="section-kicker">05 / QUICK KNOWLEDGE CHECK</span>
+            <h2>Myth or fact?</h2>
+            <p>Tap a statement to see the explanation.</p>
+          </div>
+          <div class="accordion-list">
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span
+                  >“Mental health is just as important as physical
+                  health.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="fact-label">FACT</span>
+                <p>
+                  Mental health shapes how we handle stress and connect with
+                  others. Looking after your feelings is an important part of
+                  looking after yourself.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“A student who asks for help is weak.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="myth-label">MYTH</span>
+                <p>
+                  Reaching out takes courage and self-awareness. Asking for help
+                  is one of the strongest steps a student can take.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="helpline-section section-pad" id="helpline">
+        <div class="helpline-card wrap" id="resources">
+          <div class="helpline-copy">
+            <span>NEED SOMEONE TO TALK TO?</span>
+            <h2>There is help in Kenya.</h2>
+            <p>
+              The National Child Helpline connects children and young people
+              with trained child protection officers and counselors. If you need
+              support, reach out to a trusted adult or call the helpline.
+            </p>
+          </div>
+          <div class="contact-card">
+            <p>Call the Child Helpline</p>
+            <a class="phone-number" href="tel:116">116</a
+            ><span class="tap-to-call">TOLL FREE · TAP TO CALL</span>
+            <div class="contact-divider"></div>
+            <p>WhatsApp: <strong>0722 116 116</strong></p>
+            <a
+              class="whatsapp-link"
+              href="https://wa.me/254722116116"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open WhatsApp <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner wrap">
+        <p>© 2026 MindSpace Kenya. Made for student communities.</p>
+        <p>Need immediate assistance? <a href="tel:116">Toll Free: 116</a></p>
+      </div>
+    </footer>
+    <button
+      class="floating-language"
+      id="floating-language"
+      type="button"
+      aria-label="Switch to Sheng"
+    >
+      ◉ <span>Sheng Mode: OFF</span><small>Tap</small>
+    </button>
+
+    <dialog
+      class="story-dialog"
+      id="story-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <form id="story-form" method="dialog">
+        <button
+          class="dialog-close"
+          id="close-dialog"
+          type="button"
+          aria-label="Close form"
+        >
+          ×</button
+        ><span class="dialog-icon" aria-hidden="true">✳</span>
+        <h2 id="dialog-title">Share a thought anonymously</h2>
+        <p class="dialog-intro">
+          Your voice matters. Please do not include names or other identifying
+          details.
+        </p>
+        <label for="story-topic">What is it about?</label
+        ><input
+          id="story-topic"
+          name="topic"
+          type="text"
+          maxlength="60"
+          placeholder="Exam stress, friendship, school life…"
+          required
+        /><label for="story-message">Your message</label
+        ><textarea
+          id="story-message"
+          name="message"
+          minlength="5"
+          maxlength="600"
+          rows="5"
+          placeholder="Share only what feels comfortable."
+          required
+        ></textarea>
+        <p class="privacy-disclaimer">
+          This is a front-end demo. Your message is not sent or saved.
+        </p>
+        <div class="dialog-actions">
+          <button
+            class="button button-outline"
+            id="cancel-dialog"
+            type="button"
+          >
+            Cancel</button
+          ><button class="button button-primary" type="submit">
+            Preview message
+          </button>
+        </div>
+        <p
+          class="form-confirmation"
+          id="form-confirmation"
+          role="status"
+          hidden
+        ></p>
+      </form>
+    </dialog>
+
+    <dialog class="exit-dialog" id="exit-dialog" aria-labelledby="exit-title">
+      <div class="exit-dialog-top">
+        <span class="revision-logo">KS</span><span>Kenya Study Notes</span
+        ><button id="close-exit" type="button" class="button button-outline">
+          Back to MindSpace
+        </button>
+      </div>
+      <h2 id="exit-title">Biology Revision: Cell Structure</h2>
+      <p>Quick revision notes for secondary school learners.</p>
+      <div class="revision-note">
+        <h3>Cell membrane</h3>
+        <p>
+          A selectively permeable membrane that controls the movement of
+          substances into and out of the cell.
+        </p>
+      </div>
+      <div class="revision-note">
+        <h3>Cytoplasm</h3>
+        <p>The jelly-like material where many chemical reactions take place.</p>
+      </div>
+    </dialog>
+
+    <noscript
+      ><p class="noscript-note">
+        This page works best with JavaScript enabled. You can still read the
+        mental-health information and use the helpline link.
+      </p></noscript
+    >
+  </body>
 </html>
