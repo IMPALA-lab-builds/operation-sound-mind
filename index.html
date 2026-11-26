@@ -27,7 +27,7 @@
     ></div>
     <header class="site-header">
       <div class="header-inner wrap">
-        <a class="brand" href="#top" aria-label="MindSpace Kenya home">
+        <a class="brand" href="#top" aria-label="MindSpace Kenya home" data-en-aria-label="MindSpace Kenya home" data-sheng-aria-label="MindSpace Kenya mwanzo">
           <span class="brand-mark" aria-hidden="true"
             ><svg viewBox="0 0 24 24">
               <path
@@ -41,12 +41,14 @@
           id="menu-toggle"
           type="button"
           aria-label="Open navigation"
+          data-en-aria-label="Open navigation"
+          data-sheng-aria-label="Fungua menu"
           aria-expanded="false"
           aria-controls="main-nav"
         >
           <span></span><span></span><span></span>
         </button>
-        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation" data-en-aria-label="Main navigation" data-sheng-aria-label="Menu kuu">
           <a href="#understand" data-en="Understand" data-sheng="Kuelewa"
             >Understand</a
           >
@@ -82,6 +84,8 @@
             class="language-switch"
             role="group"
             aria-label="Choose language"
+            data-en-aria-label="Choose language"
+            data-sheng-aria-label="Chagua lugha"
           >
             <button
               id="lang-en"
@@ -97,11 +101,11 @@
           </div>
           <button id="quick-exit" type="button" class="quick-exit">
             <span class="eye-icon" aria-hidden="true">◉</span
-            ><span>Quick Exit</span>
+            ><span data-en="Quick Exit" data-sheng="Toka haraka">Quick Exit</span>
           </button>
           <a class="helpline-pill" href="#helpline"
             ><span class="live-dot" aria-hidden="true"></span
-            ><span>Helpline 116</span></a
+            ><span data-en="Helpline 116" data-sheng="Nambari ya usaidizi 116">Helpline 116</span></a
           >
         </div>
       </div>
@@ -158,7 +162,7 @@
               >
             </div>
           </div>
-          <div class="breathing-scene" aria-label="Guided breathing exercise">
+          <div class="breathing-scene" aria-label="Guided breathing exercise" data-en-aria-label="Guided breathing exercise" data-sheng-aria-label="Mazoezi ya kupumua kwa mwongozo">
             <div class="breath-orbit orbit-one"></div>
             <div class="breath-orbit orbit-two"></div>
             <div class="breath-orbit orbit-three"></div>
@@ -176,6 +180,8 @@
               id="breathe-button"
               type="button"
               aria-label="Start a breathing exercise"
+              data-en-aria-label="Start a breathing exercise"
+              data-sheng-aria-label="Anza mazoezi ya kupumua"
               aria-pressed="false"
             >
               <span class="breath-button-inner"
@@ -241,13 +247,13 @@
           </button>
         </div>
         <div class="voice-layout wrap">
-          <section class="player-card card" aria-label="Student voice player">
+          <section class="player-card card" aria-label="Student voice player" data-en-aria-label="Student voice player" data-sheng-aria-label="Player ya sauti za wanafunzi">
             <div class="track-heading">
               <div class="track-avatar" aria-hidden="true">♫</div>
               <div class="track-meta">
                 <span class="track-label" id="track-label">VOICE NOTE 01</span>
-                <h3 id="track-title">Pressure ya Form 4 Mock Exams</h3>
-                <p id="track-author">Anonymous Chali, 17 · Kiambu County</p>
+                <h3 id="track-title">Form 4 Mock Exam Pressure</h3>
+                <p id="track-author">Anonymous student, 17 · Kiambu County</p>
               </div>
               <span class="play-status" id="play-status" role="status"
                 ><i></i><span>Ready to play</span></span
@@ -256,16 +262,17 @@
             <div class="wave-panel">
               <div class="wave-topline">
                 <span
-                  ><span class="sound-mark" aria-hidden="true">◖</span> Voice
-                  note player</span
-                ><span class="voice-engine" id="voice-engine"
-                  >Uses your browser&apos;s speech voice</span
+                  ><span class="sound-mark" aria-hidden="true">◖</span>
+                  <span data-en="Voice note player" data-sheng="Player ya voice note">Voice note player</span></span
+                >
+                <span class="voice-engine" id="voice-engine" data-en="Prefers an installed English voice · sound varies by device" data-sheng="Inatumia sauti ya Kiswahili iliyowekwa · sauti hutofautiana kwa device"
+                  >Prefers an installed English voice · sound varies by device</span
                 >
               </div>
               <div class="waveform" id="waveform" aria-hidden="true"></div>
             </div>
             <div class="timeline-block">
-              <label class="sr-only" for="audio-progress"
+              <label class="sr-only" for="audio-progress" data-en="Voice note progress" data-sheng="Progress ya voice note"
                 >Voice note progress</label
               ><input
                 id="audio-progress"
@@ -277,7 +284,7 @@
               />
               <div class="time-row">
                 <span id="time-current">0:00</span
-                ><span>Tap the bar to seek</span
+                ><span data-en="Tap the bar to seek" data-sheng="Gusa hapa kusonga kwa sauti">Tap the bar to seek</span
                 ><span id="time-total">0:16</span>
               </div>
             </div>
@@ -288,6 +295,8 @@
                   id="rewind"
                   type="button"
                   aria-label="Rewind 5 seconds"
+                  data-en-aria-label="Rewind 5 seconds"
+                  data-sheng-aria-label="Rudi nyuma sekunde 5"
                 >
                   −5s</button
                 ><button
@@ -303,6 +312,8 @@
                   id="forward"
                   type="button"
                   aria-label="Forward 5 seconds"
+                  data-en-aria-label="Forward 5 seconds"
+                  data-sheng-aria-label="Songesha mbele sekunde 5"
                 >
                   +5s
                 </button>
@@ -342,14 +353,14 @@
                 <span class="transcript-dot"></span
                 ><strong data-en="STORY TRANSCRIPT" data-sheng="MANENO YA RISTO"
                   >STORY TRANSCRIPT</strong
-                ><span>Tap words to follow along</span>
+                ><span data-en="Tap words to follow along" data-sheng="Gusa maneno ufuatilie">Tap words to follow along</span>
               </div>
               <p
                 id="transcript-text"
                 class="transcript-text"
                 aria-live="polite"
               ></p>
-              <p class="transcript-tip">
+              <p class="transcript-tip" data-en="Tip: read along or tap a word to jump through the story." data-sheng="Tip: soma pamoja nasi ama gusa neno uruke sehemu hiyo ya risto.">
                 Tip: read along or tap a word to jump through the story.
               </p>
             </div>
@@ -357,13 +368,13 @@
               <div class="quiz-heading">
                 <span class="quiz-icon" aria-hidden="true">✳</span>
                 <div>
-                  <span class="quiz-kicker">A MOMENT TO REFLECT</span>
-                  <h4>Ukweli au Porojo? <span>(Truth or Rumor?)</span></h4>
+                  <span class="quiz-kicker" data-en="A MOMENT TO REFLECT" data-sheng="WAKATI WA KUFIKIRIA">A MOMENT TO REFLECT</span>
+                  <h4><span data-en="Myth or Fact?" data-sheng="Ukweli ama Porojo?">Myth or Fact?</span></h4>
                 </div>
                 <span class="quiz-count" id="quiz-count">1 of 2</span>
               </div>
               <div class="quiz-statement">
-                <span>STUDENT COMMUNITY STATEMENT</span>
+                <span data-en="STUDENT COMMUNITY STATEMENT" data-sheng="KAULI YA WANAFUNZI">STUDENT COMMUNITY STATEMENT</span>
                 <p id="quiz-statement">
                   “A low mock exam score means your future is over.”
                 </p>
@@ -374,13 +385,13 @@
                   class="answer-button rumor"
                   type="button"
                 >
-                  That&apos;s a rumor</button
+                  <span data-en="That&apos;s a rumor" data-sheng="Hiyo ni porojo">That&apos;s a rumor</span></button
                 ><button
                   id="answer-truth"
                   class="answer-button truth"
                   type="button"
                 >
-                  That&apos;s true
+                  <span data-en="That&apos;s true" data-sheng="Hiyo ni ukweli">That&apos;s true</span>
                 </button>
               </div>
               <div
@@ -392,7 +403,7 @@
                 <strong id="quiz-verdict"></strong>
                 <p id="quiz-explanation"></p>
                 <button id="quiz-next" type="button">
-                  Next statement <span aria-hidden="true">→</span>
+                  <span data-en="Next statement" data-sheng="Kauli ingine">Next statement</span> <span aria-hidden="true">→</span>
                 </button>
               </div>
             </div>
@@ -409,10 +420,12 @@
               id="playlist"
               role="listbox"
               aria-label="Student stories"
+              data-en-aria-label="Student stories"
+              data-sheng-aria-label="Risto za wanafunzi"
             ></div>
             <div class="privacy-note">
               <span aria-hidden="true">♧</span>
-              <p>
+              <p data-en="Stories here are sample experiences. Real students&apos; identities should always be protected." data-sheng="Risto hizi ni mifano tu. Majina na utambulisho wa wanafunzi wa ukweli lazima ulindwe kila wakati.">
                 Stories here are sample experiences. Real students&apos;
                 identities should always be protected.
               </p>
@@ -424,14 +437,14 @@
       <section class="understand-section section-pad" id="understand">
         <div class="wrap">
           <div class="section-heading">
-            <span class="section-kicker">01 / UNDERSTANDING MENTAL HEALTH</span>
+            <span class="section-kicker" data-en="01 / UNDERSTANDING MENTAL HEALTH" data-sheng="01 / KUELEWA AFYA YA AKILI">01 / UNDERSTANDING MENTAL HEALTH</span>
             <h2
               data-en="What does mental health mean?"
               data-sheng="Afya ya akili inamaanisha nini?"
             >
               What does mental health mean?
             </h2>
-            <p>
+            <p data-en="Mental health is about our emotional, psychological and social well-being. It affects how we think, feel, relate to others and handle everyday challenges." data-sheng="Afya ya akili inahusu venye tunafeel, kufikiria na ku-relate na watu. Inaathiri vile tunahandle challenges za kila siku.">
               Mental health is about our emotional, psychological and social
               well-being. It affects how we think, feel, relate to others and
               handle everyday challenges.
@@ -440,24 +453,24 @@
           <div class="meaning-grid">
             <article class="meaning-card card">
               <span class="meaning-icon coral" aria-hidden="true">♡</span>
-              <h3>Emotional well-being</h3>
-              <p>
+              <h3 data-en="Emotional well-being" data-sheng="Kuhandle feelings">Emotional well-being</h3>
+              <p data-en="Recognising feelings, expressing them in healthy ways and learning how to cope when life gets difficult." data-sheng="Kutambua feelings zako, kuzionyesha kwa njia poa na kujifunza kuzihandle maisha ikikua tough.">
                 Recognising feelings, expressing them in healthy ways and
                 learning how to cope when life gets difficult.
               </p>
             </article>
             <article class="meaning-card card">
               <span class="meaning-icon gold" aria-hidden="true">♧</span>
-              <h3>Relationships</h3>
-              <p>
+              <h3 data-en="Relationships" data-sheng="Mahusiano">Relationships</h3>
+              <p data-en="Feeling connected, respected and able to build supportive relationships with friends, family and others." data-sheng="Kujihisi uko connected na unaheshimiwa, na kujenga relationships za support na marafiki, familia na wengine.">
                 Feeling connected, respected and able to build supportive
                 relationships with friends, family and others.
               </p>
             </article>
             <article class="meaning-card card">
               <span class="meaning-icon sage" aria-hidden="true">☼</span>
-              <h3>Everyday coping</h3>
-              <p>
+              <h3 data-en="Everyday coping" data-sheng="Kuhandle mambo ya kila siku">Everyday coping</h3>
+              <p data-en="Managing ordinary pressures, adapting to change and knowing when it is time to ask someone for help." data-sheng="Kuhandle pressure za kawaida, kuzoea changes na kujua wakati wa kuomba mtu support.">
                 Managing ordinary pressures, adapting to change and knowing when
                 it is time to ask someone for help.
               </p>
@@ -468,26 +481,26 @@
           <div class="stats-grid wrap">
             <article>
               <strong>2 in 5</strong>
-              <p>
+              <p data-en="Adolescents in a national Kenyan survey experienced a mental health problem in the previous 12 months." data-sheng="Kulingana na utafiti wa Kenya, vijana walipitia challenge ya afya ya akili ndani ya miezi 12 iliyopita.">
                 Adolescents in a national Kenyan survey experienced a mental
                 health problem in the previous 12 months.
               </p>
             </article>
             <article>
               <strong>11.1%</strong>
-              <p>
+              <p data-en="Of adolescents with a mental health problem had accessed services in the previous 12 months." data-sheng="Kati ya vijana waliopitia challenge ya afya ya akili, ni asilimia hii walipata huduma ndani ya miezi 12 iliyopita.">
                 Of adolescents with a mental health problem had accessed
                 services in the previous 12 months.
               </p>
             </article>
             <article>
               <strong>47</strong>
-              <p>
+              <p data-en="Counties are covered by Kenya&apos;s National Child Helpline 116 referral network." data-sheng="Helpline ya watoto 116 inasaidia kuunganisha watoto na huduma katika kaunti hizi.">
                 Counties are covered by Kenya&apos;s National Child Helpline 116
                 referral network.
               </p>
             </article>
-            <p class="source-note">
+            <p class="source-note" data-en="Sources: Kenya National Adolescent Mental Health Survey (2022); State Department for Children Services." data-sheng="Vyanzo: Kenya National Adolescent Mental Health Survey (2022); State Department for Children Services.">
               Sources: Kenya National Adolescent Mental Health Survey (2022);
               State Department for Children Services.
             </p>
@@ -498,9 +511,9 @@
       <section class="stigma-section section-pad" id="problem">
         <div class="stigma-layout wrap">
           <div>
-            <span class="section-kicker">02 / THE PROBLEM</span>
-            <h2>When stigma makes<br />silence feel safer</h2>
-            <p class="section-intro">
+            <span class="section-kicker" data-en="02 / THE PROBLEM" data-sheng="02 / SHIDA YA STIGMA">02 / THE PROBLEM</span>
+            <h2><span data-en="When stigma makes" data-sheng="Stigma ikifanya">When stigma makes</span><br /><span data-en="silence feel safer" data-sheng="ukimya uonekane safer">silence feel safer</span></h2>
+            <p class="section-intro" data-en="Stigma happens when people are judged, labelled or treated unfairly because of mental health challenges. In a school setting, it can make a student afraid to speak honestly or seek help." data-sheng="Stigma ni wakati mtu anahukumiwa ama kutendewa vibaya kwa sababu ya afya ya akili. Shuleni, inaweza kumfanya mwanafunzi aogope kuongea ukweli ama kuomba help.">
               Stigma happens when people are judged, labelled or treated
               unfairly because of mental health challenges. In a school setting,
               it can make a student afraid to speak honestly or seek help.
@@ -509,32 +522,67 @@
               <li>
                 <span aria-hidden="true">✓</span>
                 <p>
-                  <strong>Name-calling and teasing:</strong> classmates may use
-                  hurtful labels instead of showing understanding.
+                  <strong data-en="Name-calling and teasing:" data-sheng="Kutukan na kudhihaki:">Name-calling and teasing:</strong>
+                  <span data-en="Classmates may use hurtful labels instead of showing understanding." data-sheng="Wenzako wanaweza kutumia majina ya kuumiza badala ya kukuonyesha uelewa.">classmates may use hurtful labels instead of showing understanding.</span>
                 </p>
               </li>
               <li>
                 <span aria-hidden="true">✓</span>
                 <p>
-                  <strong>Fear of being judged:</strong> a student may worry
-                  that friends or teachers will think they are weak.
+                  <strong data-en="Fear of being judged:" data-sheng="Kuogopa kuhukumiwa:">Fear of being judged:</strong>
+                  <span data-en="A student may worry that friends or teachers will think they are weak." data-sheng="Mwanafunzi anaweza kuogopa marafiki ama walimu wataona ako weak.">a student may worry that friends or teachers will think they are weak.</span>
                 </p>
               </li>
               <li>
                 <span aria-hidden="true">✓</span>
                 <p>
-                  <strong>Myths and misinformation:</strong> mental health
-                  challenges may be misunderstood or explained unfairly.
+                  <strong data-en="Myths and misinformation:" data-sheng="Ukweli wa uongo na habari potovu:">Myths and misinformation:</strong>
+                  <span data-en="Mental health challenges may be misunderstood or explained unfairly." data-sheng="Changamoto za afya ya akili zinaweza kueleweka vibaya ama kuelezwa bila haki.">mental health challenges may be misunderstood or explained unfairly.</span>
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong data-en="Pressure at school and home:" data-sheng="Pressure ya shule na nyumbani:">Pressure at school and home:</strong>
+                  <span data-en="Exams, family responsibilities, or money worries can pile up and affect sleep, focus, and mood." data-sheng="Exams, majukumu ya familia ama stress ya pesa zinaweza kuongezeka na kuathiri usingizi, focus na mood.">exams, family responsibilities, or money worries can pile up and affect sleep, focus, and mood.</span>
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong data-en="Bullying and exclusion:" data-sheng="Uonevu na kutengwa:">Bullying and exclusion:</strong>
+                  <span data-en="Repeated teasing, online harassment, or being left out can make someone feel unsafe and alone." data-sheng="Kudhihakiwa kila mara, kusumbuliwa online ama kuachwa nje kunaweza kumfanya mtu ajihisi unsafe na mpweke.">repeated teasing, online harassment, or being left out can make someone feel unsafe and alone.</span>
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong data-en="Loneliness, grief, or change:" data-sheng="Upweke, majonzi ama changes:">Loneliness, grief, or change:</strong>
+                  <span data-en="Moving schools, losing someone, or changes at home can be difficult to carry without support." data-sheng="Kuhama shule, kumpoteza mtu ama changes za nyumbani zinaweza kuwa ngumu kupita bila support.">moving schools, losing someone, or changes at home can be difficult to carry without support.</span>
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong data-en="Hard to find help:" data-sheng="Kukosa kujua pa kupata help:">Hard to find help:</strong>
+                  <span data-en="Not knowing who to talk to, worrying about privacy, or having few nearby services may make support feel out of reach." data-sheng="Kutokujua wa kubonga naye, kuhofia privacy ama kukosa huduma karibu kunaweza kufanya support ionekane mbali.">not knowing who to talk to, worrying about privacy, or having few nearby services may make support feel out of reach.</span>
+                </p>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <p>
+                  <strong data-en="Discrimination:" data-sheng="Ubaguzi:">Discrimination:</strong>
+                  <span data-en="Unfair treatment because of a person&apos;s disability, background, or identity can add stress and make it harder to feel accepted." data-sheng="Kutendewa vibaya kwa sababu ya ulemavu, background ama identity kunaweza kuongeza stress na kufanya iwe ngumu kujihisi umekubaliwa.">unfair treatment because of a person&apos;s disability, background, or identity can add stress and make it harder to feel accepted.</span>
                 </p>
               </li>
             </ul>
           </div>
           <blockquote class="student-quote" id="why-quiet">
-            <p>
+            <p data-en="“A student who is struggling does not need a label. They need to be heard, respected and supported.”" data-sheng="“Mwanafunzi anayepitia tough time hahitaji label. Anahitaji kuskizwa, kuheshimiwa na kupewa support.”">
               “A student who is struggling does not need a label. They need to
               be heard, respected and supported.”
             </p>
-            <cite>MindSpace Kenya · A reminder for every school community</cite>
+            <cite data-en="MindSpace Kenya · A reminder for every school community" data-sheng="MindSpace Kenya · Kumbusho kwa community zote za shule">MindSpace Kenya · A reminder for every school community</cite>
           </blockquote>
         </div>
       </section>
@@ -542,40 +590,40 @@
       <section class="support-section section-pad" id="practical-support">
         <div class="wrap">
           <div class="section-heading">
-            <span class="section-kicker">04 / PRACTICAL SUPPORT</span>
-            <h2>How can we make school a safer place?</h2>
-            <p>
+            <span class="section-kicker" data-en="04 / PRACTICAL SUPPORT" data-sheng="04 / JINSI YA KUSAIDIANA">04 / PRACTICAL SUPPORT</span>
+            <h2 data-en="How can we make school a safer place?" data-sheng="Tunawezaje kufanya shule iwe safe zaidi?">How can we make school a safer place?</h2>
+            <p data-en="Listening without judgement and helping a friend reach a trusted adult makes a real difference." data-sheng="Kuskiza bila kuhukumu na kusaidia beshte afike kwa mtu mzima anayemtrust kunaweza kusaidia sana.">
               Listening without judgement and helping a friend reach a trusted
               adult makes a real difference.
             </p>
           </div>
           <div class="steps-grid">
             <article class="step-card card">
-              <span>STEP 01</span>
-              <h3>Listen carefully</h3>
-              <p>
+              <span data-en="STEP 01" data-sheng="HATUA 01">STEP 01</span>
+              <h3 data-en="Listen carefully" data-sheng="Skiza kwa makini">Listen carefully</h3>
+              <p data-en="Give the person time to speak. Do not interrupt, mock or rush to judge." data-sheng="Mpe mtu nafasi ya kuongea. Usikatize, kumcheka ama kumhukumu haraka.">
                 Give the person time to speak. Do not interrupt, mock or rush to
                 judge.
               </p>
             </article>
             <article class="step-card card">
-              <span>STEP 02</span>
-              <h3>Take them seriously</h3>
-              <p>
+              <span data-en="STEP 02" data-sheng="HATUA 02">STEP 02</span>
+              <h3 data-en="Take them seriously" data-sheng="Chukulia feelings zao serious">Take them seriously</h3>
+              <p data-en="Avoid saying “just get over it.” Their feelings deserve respect." data-sheng="Usiseme “achana nayo tu.” Feelings zao zinastahili kuheshimiwa.">
                 Avoid saying “just get over it.” Their feelings deserve respect.
               </p>
             </article>
             <article class="step-card card">
-              <span>STEP 03</span>
-              <h3>Encourage support</h3>
-              <p>
+              <span data-en="STEP 03" data-sheng="HATUA 03">STEP 03</span>
+              <h3 data-en="Encourage support" data-sheng="Mshow support iko">Encourage support</h3>
+              <p data-en="Suggest speaking with a trusted parent, teacher, or counselor." data-sheng="Mshow abonge na mzazi, mwalimu ama counselor anayemtrust.">
                 Suggest speaking with a trusted parent, teacher, or counselor.
               </p>
             </article>
             <article class="step-card card">
-              <span>STEP 04</span>
-              <h3>Keep checking in</h3>
-              <p>
+              <span data-en="STEP 04" data-sheng="HATUA 04">STEP 04</span>
+              <h3 data-en="Keep checking in" data-sheng="Endelea kumcheck">Keep checking in</h3>
+              <p data-en="A simple “How are you doing today?” reminds someone they are cared for." data-sheng="Kuuliza tu “Uko aje leo?” kunaonyesha mtu kwamba unamjali.">
                 A simple “How are you doing today?” reminds someone they are
                 cared for.
               </p>
@@ -587,9 +635,9 @@
       <section class="knowledge-section section-pad" id="knowledge-check">
         <div class="knowledge-wrap">
           <div class="section-heading">
-            <span class="section-kicker">05 / QUICK KNOWLEDGE CHECK</span>
-            <h2>Myth or fact?</h2>
-            <p>Tap a statement to see the explanation.</p>
+            <span class="section-kicker" data-en="05 / QUICK KNOWLEDGE CHECK" data-sheng="05 / JARIBIO FUPI YA MAARIFA">05 / QUICK KNOWLEDGE CHECK</span>
+            <h2 data-en="Myth or fact?" data-sheng="Ukweli ama porojo?">Myth or fact?</h2>
+            <p data-en="Tap a statement to see the explanation." data-sheng="Gusa kauli uone maelezo.">Tap a statement to see the explanation.</p>
           </div>
           <div class="accordion-list">
             <article class="accordion-item">
@@ -629,6 +677,181 @@
                 </p>
               </div>
             </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“Only adults can experience mental-health challenges.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="myth-label">MYTH</span>
+                <p>
+                  Young people can experience mental-health challenges too.
+                  Support is worthwhile at every age.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“Mental health can affect sleep, focus, and friendships.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="fact-label">FACT</span>
+                <p>
+                  Our wellbeing can influence daily life in many ways. If changes
+                  are worrying you, a trusted adult or health professional can
+                  help you decide what support may be useful.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“I need perfect words before I ask someone for help.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="myth-label">MYTH</span>
+                <p>
+                  You can start simply: “I haven&apos;t been feeling like myself.
+                  Can we talk?” A trusted person can help you take the next step.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“Rest, movement, and connection can support wellbeing.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="fact-label">FACT</span>
+                <p>
+                  Small routines can help, though they do not replace extra help
+                  when someone is struggling. It is okay to reach out as well.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“A friend who is struggling just needs to cheer up.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="myth-label">MYTH</span>
+                <p>
+                  Listening without judgement is more helpful than dismissing
+                  someone&apos;s feelings. Encourage them to talk to a trusted adult
+                  or call Kenya&apos;s Child Helpline on 116.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“A trusted adult can help me find more support.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="fact-label">FACT</span>
+                <p>
+                  A parent, teacher, school counselor, or health professional can
+                  listen and help you explore the right next step. If you need
+                  urgent support in Kenya, call 116.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“Stress can affect both feelings and the body.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="fact-label">FACT</span>
+                <p>
+                  Stress may show up as tense muscles, headaches, or trouble
+                  sleeping. These signs can have different causes, so talk to a
+                  trusted adult or health professional if they worry you or persist.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“I should wait until things become a crisis before asking for help.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="myth-label">MYTH</span>
+                <p>
+                  You can reach out early, even if you are not sure what is wrong.
+                  A trusted adult can listen and help you decide what to do next.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“Writing down my worries can help me start a conversation.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="fact-label">FACT</span>
+                <p>
+                  If speaking feels hard, you could write a note or message to a
+                  trusted person, or ask someone to sit with you while you talk.
+                </p>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button
+                class="accordion-trigger"
+                type="button"
+                aria-expanded="false"
+              >
+                <span>“If one coping strategy does not help, nothing else will.”</span
+                ><span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-answer" hidden>
+                <span class="myth-label">MYTH</span>
+                <p>
+                  Different approaches work for different people and situations.
+                  It is okay to try another small step and ask someone you trust
+                  for support.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -636,26 +859,26 @@
       <section class="helpline-section section-pad" id="helpline">
         <div class="helpline-card wrap" id="resources">
           <div class="helpline-copy">
-            <span>NEED SOMEONE TO TALK TO?</span>
-            <h2>There is help in Kenya.</h2>
-            <p>
+            <span data-en="NEED SOMEONE TO TALK TO?" data-sheng="UNAHITAJI KUBONGA NA MTU?">NEED SOMEONE TO TALK TO?</span>
+            <h2 data-en="There is help in Kenya." data-sheng="Kuna help Kenya.">There is help in Kenya.</h2>
+            <p data-en="The National Child Helpline connects children and young people with trained child protection officers and counselors. If you need support, reach out to a trusted adult or call the helpline." data-sheng="National Child Helpline huunganisha watoto na vijana na maafisa wa ulinzi na counselors. Ukihitaji support, ongea na mtu mzima unamtrust ama upigie helpline.">
               The National Child Helpline connects children and young people
               with trained child protection officers and counselors. If you need
               support, reach out to a trusted adult or call the helpline.
             </p>
           </div>
           <div class="contact-card">
-            <p>Call the Child Helpline</p>
+            <p data-en="Call the Child Helpline" data-sheng="Piga Child Helpline">Call the Child Helpline</p>
             <a class="phone-number" href="tel:116">116</a
-            ><span class="tap-to-call">TOLL FREE · TAP TO CALL</span>
+            ><span class="tap-to-call" data-en="TOLL FREE · TAP TO CALL" data-sheng="BILA MALIPO · GUSA UPIGIE">TOLL FREE · TAP TO CALL</span>
             <div class="contact-divider"></div>
-            <p>WhatsApp: <strong>0722 116 116</strong></p>
+            <p><span data-en="WhatsApp:" data-sheng="WhatsApp:">WhatsApp:</span> <strong>0722 116 116</strong></p>
             <a
               class="whatsapp-link"
               href="https://wa.me/254722116116"
               target="_blank"
               rel="noopener noreferrer"
-              >Open WhatsApp <span aria-hidden="true">↗</span></a
+              ><span data-en="Open WhatsApp" data-sheng="Fungua WhatsApp">Open WhatsApp</span> <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
@@ -664,17 +887,19 @@
 
     <footer class="site-footer">
       <div class="footer-inner wrap">
-        <p>© 2026 MindSpace Kenya. Made for student communities.</p>
-        <p>Need immediate assistance? <a href="tel:116">Toll Free: 116</a></p>
+        <p data-en="© 2026 MindSpace Kenya. Made for student communities." data-sheng="© 2026 MindSpace Kenya. Imetengenezwa kwa community za wanafunzi.">© 2026 MindSpace Kenya. Made for student communities.</p>
+        <p><span data-en="Need immediate assistance?" data-sheng="Unahitaji help ya haraka?">Need immediate assistance?</span> <a href="tel:116" data-en="Toll Free: 116" data-sheng="Bila malipo: 116">Toll Free: 116</a></p>
       </div>
     </footer>
     <button
       class="floating-language"
       id="floating-language"
       type="button"
-      aria-label="Switch to Sheng"
-    >
-      ◉ <span>Sheng Mode: OFF</span><small>Tap</small>
+              aria-label="Switch to Sheng"
+              data-en-aria-label="Switch to Sheng"
+              data-sheng-aria-label="Badili uingie English"
+            >
+      ◉ <span>Sheng Mode: OFF</span><small data-en="Tap" data-sheng="Gusa">Tap</small>
     </button>
 
     <dialog
@@ -688,23 +913,27 @@
           id="close-dialog"
           type="button"
           aria-label="Close form"
+          data-en-aria-label="Close form"
+          data-sheng-aria-label="Funga form"
         >
           ×</button
         ><span class="dialog-icon" aria-hidden="true">✳</span>
-        <h2 id="dialog-title">Share a thought anonymously</h2>
-        <p class="dialog-intro">
+        <h2 id="dialog-title" data-en="Share a thought anonymously" data-sheng="Share mawazo bila jina">Share a thought anonymously</h2>
+        <p class="dialog-intro" data-en="Your voice matters. Please do not include names or other identifying details." data-sheng="Sauti yako ni muhimu. Tafadhali usiweke majina ama details zinazoweza kukutambulisha.">
           Your voice matters. Please do not include names or other identifying
           details.
         </p>
-        <label for="story-topic">What is it about?</label
+        <label for="story-topic" data-en="What is it about?" data-sheng="Inahusu nini?">What is it about?</label
         ><input
           id="story-topic"
           name="topic"
           type="text"
           maxlength="60"
           placeholder="Exam stress, friendship, school life…"
+          data-en-placeholder="Exam stress, friendship, school life…"
+          data-sheng-placeholder="Exam stress, urafiki, maisha ya shule…"
           required
-        /><label for="story-message">Your message</label
+        /><label for="story-message" data-en="Your message" data-sheng="Ujumbe wako">Your message</label
         ><textarea
           id="story-message"
           name="message"
@@ -712,9 +941,11 @@
           maxlength="600"
           rows="5"
           placeholder="Share only what feels comfortable."
+          data-en-placeholder="Share only what feels comfortable."
+          data-sheng-placeholder="Share tu kile uko comfortable kusema."
           required
         ></textarea>
-        <p class="privacy-disclaimer">
+        <p class="privacy-disclaimer" data-en="This is a front-end demo. Your message is not sent or saved." data-sheng="Hii ni demo ya front-end. Ujumbe wako hautatumwa wala kuhifadhiwa.">
           This is a front-end demo. Your message is not sent or saved.
         </p>
         <div class="dialog-actions">
@@ -723,9 +954,9 @@
             id="cancel-dialog"
             type="button"
           >
-            Cancel</button
+            <span data-en="Cancel" data-sheng="Acha">Cancel</span></button
           ><button class="button button-primary" type="submit">
-            Preview message
+            <span data-en="Preview message" data-sheng="Ona ujumbe">Preview message</span>
           </button>
         </div>
         <p
@@ -741,29 +972,58 @@
       <div class="exit-dialog-top">
         <span class="revision-logo">KS</span><span>Kenya Study Notes</span
         ><button id="close-exit" type="button" class="button button-outline">
-          Back to MindSpace
+          <span data-en="Back to MindSpace" data-sheng="Rudi MindSpace">Back to MindSpace</span>
         </button>
       </div>
-      <h2 id="exit-title">Biology Revision: Cell Structure</h2>
-      <p>Quick revision notes for secondary school learners.</p>
+      <h2 id="exit-title" data-en="Biology Revision: Cell Structure" data-sheng="Marudio ya Biology: Muundo wa Seli">Biology Revision: Cell Structure</h2>
+      <p data-en="Quick revision notes for secondary school learners." data-sheng="Notes fupi za marudio kwa wanafunzi wa sekondari.">Quick revision notes for secondary school learners.</p>
       <div class="revision-note">
-        <h3>Cell membrane</h3>
-        <p>
+        <h3 data-en="Cell membrane" data-sheng="Membrane ya seli">Cell membrane</h3>
+        <p data-en="A selectively permeable membrane that controls the movement of substances into and out of the cell." data-sheng="Membrane inayochagua vitu vinavyoingia na kutoka ndani ya seli.">
           A selectively permeable membrane that controls the movement of
           substances into and out of the cell.
         </p>
       </div>
       <div class="revision-note">
-        <h3>Cytoplasm</h3>
-        <p>The jelly-like material where many chemical reactions take place.</p>
+        <h3 data-en="Cytoplasm" data-sheng="Cytoplasm">Cytoplasm</h3>
+        <p data-en="The jelly-like material where many chemical reactions take place." data-sheng="Ni kama gel iliyo ndani ya seli, ambapo chemical reactions nyingi hutokea.">The jelly-like material where many chemical reactions take place.</p>
       </div>
     </dialog>
 
     <noscript
-      ><p class="noscript-note">
+      ><p class="noscript-note" data-en="This page works best with JavaScript enabled. You can still read the mental-health information and use the helpline link." data-sheng="Page hii hufanya kazi vizuri JavaScript ikiwa imewashwa. Bado unaweza kusoma maelezo ya afya ya akili na kutumia nambari ya helpline.">
         This page works best with JavaScript enabled. You can still read the
         mental-health information and use the helpline link.
       </p></noscript
     >
   </body>
 </html>
+<link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="logo-link" href="#top">
+          <span class="logo-icon">🧠</span><span class="logo-text">MindSpace Kenya</span>
+        </a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#meaning" data-en="What it means" data-sheng="Inamaanisha nini?">What it means</a></li>
+            <li><a href="#problem" data-en="The problem" data-sheng="Shida ya stigma">The problem</a></li>
+            <li><a href="#practical-support" data-en="Practical support" data-sheng="Jinsi ya kusaidiana">Practical support</a></li>
+            <li><a href="#knowledge-check" data-en="Knowledge check" data-sheng="Jaribio la maarifa">Knowledge check</a></li>
+            <li><a href="#helpline" data-en="Helpline & resources" data-sheng="Helpline na resources">Helpline & resources</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-wrap wrap">
+          <h1 data-en="Mental health matters." data-sheng="Afya ya akili ni muhimu.">Mental health matters.</h1>
+          <p data-en="A guide for students, teachers and parents to understand mental health challenges." data-sheng="Mwongozo kwa wanafunzi, walimu na wazazi kuelewa changamoto za afya ya akili.">
+            A guide for students, teachers and parents to understand mental health challenges.
+          </p>
